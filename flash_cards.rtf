@@ -1,0 +1,208 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 HelveticaNeue-Medium;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;\red242\green242\blue242;
+\red184\green14\blue61;\red247\green238\blue241;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww23880\viewh10040\viewkind0
+\deftab720
+\pard\pardeftab720\sl720\sa200
+
+\f0\b\fs60 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Ruby Flashcards 1: Single Deck\cb1 \
+\pard\pardeftab720\sl400\sa200
+
+\b0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Let's build a simple flashcard game in Ruby with a command-line interface. Here is an example of one possible implementation:\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl320
+
+\f1\fs24 \cf2 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 $ ruby flashcards.rb\
+Welcome to Ruby Flash Cards. To play, just enter the correct term for each definition.  Ready?  Go!\
+\
+Definition\
+A file format in which values are delimited by commas.\
+\
+Guess: YAML\
+Incorrect!  Try again.\
+\
+Guess: XML\
+Incorrect!  Try again.\
+\
+Guess: CSV\
+Correct!\
+\
+Definition\
+(and so on)\
+\pard\pardeftab720\sl400\sa200
+
+\f0\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl600\sa200
+
+\f2\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Learning Goals\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls1\ilvl0
+\f0\fs28 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Understand how and when to separate concerns\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Be able to create interactive command-line applications with data persistence\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Effectively manage a multiple-file application\cb1 \
+\pard\pardeftab720\sl800\sa200
+
+\f2\fs60 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Objectives\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl600\sa200
+
+\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Design Your Data Model and Control Flow\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400\sa200
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 You might already have a clear picture of how to design your program, but it is always a good idea to articulate your concept using pseudocode, wireframes, or another modeling tool. You should be able to draw or write out a rough sketch of both the
+\b \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 data model
+\b0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  and the 
+\b \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 control flow
+\b0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  of the program.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 This stage should take at most 15-20 minutes. If you're spending more than that, find a staff member to get you unstuck.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Some questions to consider:\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Do you fully understand the logic of the game?\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What classes (state and behavior) do you need?\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What are the responsibilities of each class? Are they single responsibilities?\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Which methods should be public? Which should be private?\cb1 \
+\pard\pardeftab720\sl400\sa200
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Once you have a plan in place, create the skeletal file structure for your app.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Find a staff member or another student and get their opinion on your overall structure.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl600\sa200
+
+\f2\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Cards in a file\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400\sa200
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 The next step is to answer the question of where the cards will come from. Provided in the gist is a file called
+\f1\fs22 \cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 sample_cards.txt
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 , which demonstrates a supremely basic way to store the card data (definition on one line, term on the next, and then a blank line to separate the two). In other words, the file looks like:\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl320
+
+\f1\fs24 \cf2 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 definition1 definition1 definition1 etc.\
+term1 term1 term1 etc.\
+\
+definition2 definition2 definition2 etc.\
+term2 term2 term2 etc.\
+\pard\pardeftab720\sl400\sa200
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 You can use this same file format for your cards if you like, or you can create your own. Just don't get too fancy. Remember, we're keeping it simple.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl600\sa200
+
+\f2\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Core architecture\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400\sa200
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Now that you've got a general sketch for your app design and some sample data to work with, it's time to build out your app.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Think carefully about how each piece of the puzzle should fit together. Build it out slowly and test as you go. Skip the user interface (the part of your program that will receive and respond to user input) for now. You can mock user input by creating having a method on one of your classes that takes a guess as an argument and performs the appropriate action. Later you can hook this up to real, live user input.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Some questions to consider:\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How will you generate card objects from the source file?\cb1 \
+\ls3\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How will your classes interact?\cb1 \
+\ls3\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Where should the game logic live? What about the file parsing?\cb1 \
+\pard\pardeftab720\sl600\sa200
+
+\f2\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Interface design\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400\sa200
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 By this point, you should have all of the core components of your application built out. In other words, 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 your code should be an accurate model of the ingredients needed for a real-life flashcard game
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 . Are you missing anything?\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Finally, it is time to implement the interactive part of the game: the piece that will actually let you play with it via your very-own custom interface.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Think about what kinds of inputs and outputs your interface will handle and write the code to match for them.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Some questions to consider:\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How should you check for whether the user's answer is correct? Where should this logic live?\cb1 \
+\ls4\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What happens when a user starts the game?\cb1 \
+\ls4\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What happens when a user finishes the game?\cb1 \
+\ls4\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How will you handle incorrect answers?\cb1 \
+\pard\pardeftab720\sl400\sa200
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Finish building out your app. Make sure everything works peachy keen.\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl600\sa200
+
+\f2\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Post-challenge questions\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls5\ilvl0
+\f0\fs28 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Why did you organize your classes and logic in the way that you did?\cb1 \
+\ls5\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What have you learned about object-oriented thinking?\cb1 \
+\ls5\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How flexible is your code? For example, how many changes would you have to make in how many different files to allow for users to see the first letter of the answer? What if you wanted to allow case-insensitive answers?\cb1 \
+\pard\pardeftab720\sl360
+
+\fs26 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+}
