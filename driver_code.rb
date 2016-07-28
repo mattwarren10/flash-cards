@@ -87,3 +87,6 @@ flashcard_stack.add_flashcards(flashcard35)
 flashcard_stack.add_flashcards(flashcard36)
 flashcard_stack.add_flashcards(flashcard37)
 flashcard_stack.add_flashcards(flashcard38)
+
+
+puts flashcard_stack.play_game
